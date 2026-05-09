@@ -1,11 +1,13 @@
 class Jx05presenter < Formula
   desc "Turns the JX-05 Bluetooth ring remote into a macOS presentation controller"
   homepage "https://github.com/savikko/jx05presenter"
-  url "https://github.com/savikko/jx05presenter/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "5ba03ad27d1a49428ad4c4117e015450a3022264e11ad7f1294e1af1099d7058"
+  url "https://github.com/savikko/jx05presenter/releases/download/v1.1.0/ringbridge-v1.1.0-arm64.tar.gz"
+  sha256 "114a05834d45a3a5c35d07a325aa00cc7f8b89f7d20c7e1526d06dec063d2ffe"
+  version "1.1.0"
   license "MIT"
 
   depends_on :macos
+  depends_on arch: :arm64
 
   service do
     run [opt_bin/"ringbridge"]
@@ -15,7 +17,6 @@ class Jx05presenter < Formula
   end
 
   def install
-    system "swiftc", "ringbridge.swift", "-o", "ringbridge"
     bin.install "ringbridge"
   end
 
