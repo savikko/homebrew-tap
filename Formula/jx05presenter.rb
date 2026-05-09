@@ -1,9 +1,9 @@
 class Jx05presenter < Formula
   desc "Turns the JX-05 Bluetooth ring remote into a macOS presentation controller"
   homepage "https://github.com/savikko/jx05presenter"
-  url "https://github.com/savikko/jx05presenter/releases/download/v1.2.0/ringbridge-v1.2.0-arm64.tar.gz"
-  sha256 "1d7b95b6d3afe2d3594a486dcdd9f1daffc74a6a3557b1e6dc4a2fa8d618a2c0"
-  version "1.2.0"
+  url "https://github.com/savikko/jx05presenter/releases/download/v1.3.0/ringbridge-v1.3.0-arm64.tar.gz"
+  sha256 "651b8b793b982ef0698407cd493af2e2a5bee895a5a236bda3ea56c913cc9a9d"
+  version "1.3.0"
   license "MIT"
 
   depends_on :macos
